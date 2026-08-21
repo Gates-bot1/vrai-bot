@@ -1,0 +1,38 @@
+{
+    "max_open_trades": 3,
+    "stake_currency": "USDT",
+    "stake_amount": 50,
+    "dry_run": true,
+    "dry_run_wallet": 1000,
+    "trading_mode": "spot",
+    "timeframe": "5m",
+    "exchange": {
+        "name": "binance",
+        "key": "HFZdKc0Z6yn0ofM3nQWVYlVgH3xQzAwkoXjAsQhPbzWsCWeKXoHdtbOTYCfoFvYB",
+        "secret": "2OJAoIrqbOMMH3r62gGui1gAeNL1YF69dpDe810g5iTAF6nAg6Bau1i0IVkksMTN",
+        "ccxt_config": {
+            "urls": {
+                "api": {
+                    "public": "https://testnet.binance.vision/api/v3",
+                    "private": "https://testnet.binance.vision/api/v3"
+                }
+            }
+        },
+        "pair_whitelist": ["BTC/USDT", "ETH/USDT", "BNB/USDT", "SOL/USDT", "XRP/USDT"],
+        "pair_blacklist": []
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "8854292902:AAEM1m07oyXNJp5UK90gh_tUrHwOQ1kD-hs",
+        "chat_id": "7546247523"
+    },
+    "api_server": {
+        "enabled": false,
+        "listen_ip_address": "127.0.0.1",
+        "listen_port": 8080,
+        "username": "freqtrader",
+        "password": "changeme_password"
+    },
+    "bot_name": "vrai-bot",
+    "initial_state": "running"
+}
