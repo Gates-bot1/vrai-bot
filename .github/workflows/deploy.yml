@@ -2,7 +2,7 @@ name: Deploy to Fly.io
 
 on:
   push:
-    branches: [feat/freqai]
+    branches: [main]
 
 jobs:
   deploy:
@@ -14,4 +14,4 @@ jobs:
       - name: Deploy to Fly.io
         run: flyctl deploy --remote-only
         env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+          FLY_API_TOKEN: "FlyV1 fm2_lJPECAAAAAAAF6kexBADwmW3J+j7ZAL9hetkRW7rwrVodHRwczovL2FwaS5mbHkuaW8vdjGUAJLOAByutx8Lk7lodHRwczovL2FwaS5mbHkuaW8vYWFhL3YxxDw0wCAaiuQBn0EdqVLsxoydOYwVruVRllNI9VS9MY1cuojITzsnYrvqEWUj6jMezGttFKpS2Pf9JGV4Z8vETh8TjR9cNOkmBFyaY/xcOrxREhpBYGwNChmurudW3BLiRyrvbCUo0WDNb0zWMyXarqxschxafIrYs18AcfpbcfGcWeo9JH9wdm6rsvWUjsQgAWZq7XGBjRUtN1Zx7TIDvCNAO67z+BDpArEtcGDYXDQ=,fm2_lJPETh8TjR9cNOkmBFyaY/xcOrxREhpBYGwNChmurudW3BLiRyrvbCUo0WDNb0zWMyXarqxschxafIrYs18AcfpbcfGcWeo9JH9wdm6rsvWUjsQQGHFY0YlBkFr2fayH0+J7BcO5aHR0cHM6Ly9hcGkuZmx5LmlvL2FhYS92MZgEks5qjK6LzwAAAAEmhMypF84AG3SICpHOABt0iAzEEGoOyOGkXDjf2a9N0Z5ne6jEIDgyz3vMLm7EYHN4xNWTKo2QqjCCAI755FANw2hNmnmO"
